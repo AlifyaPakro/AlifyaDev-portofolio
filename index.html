@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN v3 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Config Tailwind (ganti @theme dengan ini) -->
+  <script>
+    tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'jersey': ['"Jersey 10"', 'sans-serif'],
+              'bebas': ['"Bebas Neue"', 'sans-serif'],
+              'pixelify': ['"Pixelify Sans"', 'sans-serif'],
+            },
+            },
+            backgroundImage: {
+              /* ✅ Daftarkan grid di sini */
+              'bg-grid': `linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)`,
+            }
+        }
+      }
+  </script>
+</head>
+
+<body class="font-jersey relative">
+    <div class="absolute inset-0 bg-bg-grid bg-[size:50px_50px] z-0"></div>
+    <section class="bg-[radial-gradient(circle,rgba(54,66,110,1)_0%,rgba(2,4,28,1)_70%)] text-white z-10">
+        
+        <header class="fixed z-[1000] w-full">
+            <nav class="bg-[#04072c] p-6 flex justify-between pl-8 pr-8 backdrop-blur-md bg-opacity-50">
+                <div class="">
+                    <h1 class="text-yellow-300 text-4xl">Alifya<span class="text-white">Dev</span></h1>
+                </div>
+                <div class="">
+                    <a class="m-4 hover:text-yellow-300 text-2xl" href="#about">About</a>
+                    <a class="m-4 hover:text-yellow-300 text-2xl" href="">Skill</a>
+                    <a class="m-4 hover:text-yellow-300 text-2xl" href="">Project</a>
+                    <a class="m-4 hover:text-yellow-300 text-2xl" href="">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main class="pt-[97px]">
+            <div class="w-full flex justify-center items-center">
+                <div class="w-full flex flex-col items-center text-center p-4 m-2">
+                    <p class="bg-[#04072c] border-2 border-yellow-300 text-yellow-300 p-2 w-80 m-2">👋 Halo, Saya Alifya Alfatih Pakro</p>
+                    <h1 class="text-white text-8xl m-4">JUNIOR WEB DEVELOPER</h1>
+                    <h1 class="text-yellow-300 text-7xl m-4">Fokus Pada Pengembangan Web Modern</h1>
+                    <div class="w-2/3 m-8">
+                        <p>Junior Web Developer dengan pengalaman membangun aplikasi web berbasis HTML, CSS, JavaScript, PHP, Java, dan MySQL. Terbiasa mengembangkan sistem inventory, perpustakaan, dan aplikasi sederhana lainnya dengan konsep CRUD.</p>
+                    </div>
+                    <div class="flex m-8">
+                    <a class="border-2 text-2xl border-yellow-400 bg-[linear-gradient(172deg,rgba(255,249,217,1)_0%,rgba(250,214,55,1)_50%,rgba(186,109,0,1)_100%)] pl-8 pr-8 pt-4 pb-4 m-2" href="">Show Cv</a>
+                    <a class="border-2 text-2xl border-yellow-400 bg-[linear-gradient(172deg,rgba(255,249,217,1)_0%,rgba(250,214,55,1)_50%,rgba(186,109,0,1)_100%)] pl-8 pr-8 pt-4 pb-4 m-2" href="My Project">My Project</a>
+                </div>
+                </div>
+                
+            </div>
+        </main>
+    </section>
+    <section class="bg-[#010423] z-10" id="about">
+        <main class="flex text-white justify-center pt-20 pb-20">
+            
+            <div class="w-3/3 flex">
+                <div class="">
+                <div class="border-2 border-[#474a6f] pt-4 pb-4 pl-8 pr-8 w-[310px] m-2">
+                    <p class="text-yellow-300">Name</p>
+                    <h1 class="text-4xl">Alifya Alfatih Pakro</h1>
+                </div>
+                <div class="border-2 border-[#474a6f] pt-4 pb-4 pl-8 pr-8 w-[310px] m-2">
+                    <p class="text-yellow-300">info</p>
+                    <p>Junior Web Developer dengan fokus pada pengembangan aplikasi web menggunakan HTML, CSS, JavaScript, PHP, dan Java. Berpengalaman membangun sistem berbasis web seperti inventory dan perpustakaan menggunakan konsep CRUD dan database MySQL.</p>
+                    <p>Terbiasa menggunakan Git & GitHub untuk version control dan mengelola proyek secara mandiri, serta memiliki ketertarikan pada UI/UX Design menggunakan Figma dan pemecahan masalah melalui debugging dan analisis.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 class="text-5xl text-yellow-300">Profil</h1>
+                <div class="w-52 h-72 cursor-pointer group ml-8 mr-8 mt-16" style="perspective: 1000px">
+                <div class="w-full h-full border-4 border-[#474a6f]
+                        bg-[url('img/images.jpg')]
+                        origin-bottom
+                        transition-transform duration-500 ease-in-out
+                        group-hover:[transform:rotateX(40deg)]
+                        flex flex-col items-center justify-center gap-2">
+                    <div class=""></div>
+                </div>
+                <img class="absolute bottom-0 w-full z-20 
+                        opacity-0 
+                        transition-[opacity,transform] duration-500 
+                        group-hover:opacity-100 group-hover:-translate-y-8" 
+                        src="img/img.png" 
+                        alt="foto">
+                
+            </div>
+            </div>
+            <div class="">
+                <div class="border-2 border-[#474a6f] pt-4 pb-4 pl-8 pr-8 w-[310px] m-2">
+                    <div class="">
+                        <div class=""></div>
+                        <div class="">
+                            <h1 class="text-yellow-300 text-4xl">Junior</h1>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-[#474a6f] pt-4 pb-4 pl-8 pr-8 w-[310px] m-2">
+                    <div class="">
+                        <div class=""></div>
+                        <div class="">
+                            <h1 class="text-yellow-300 text-4xl">Fullstack</h1>
+                            <p>Backend & Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-[#474a6f] pt-4 pb-4 pl-8 pr-8 w-[310px] m-2">
+                    <div class=""></div>
+                    <div class="">
+                        <h1 class="text-yellow-300 text-4xl">UI/UX Designer</h1>
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    </section>
+    </div>
+  </body>
+</html>
