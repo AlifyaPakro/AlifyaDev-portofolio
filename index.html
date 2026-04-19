@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<title>Portofolio | Alifya.Dev</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -50,6 +51,10 @@ body{font-family:'Jersey 10',sans-serif;background:#02041c;color:#fff;}
   margin:.4rem;
   transition:background .2s,border-color .2s,transform .2s;
   text-align:center;
+}
+.card-profil{
+  background-color: #5a5d80;
+  border: 4px solid #474a6f;
 }
 .skill-item:hover{background:#8488ba;border-color:#fff;transform:translateY(-6px);}
 .skill-icon{border:3px solid #9ca3af;height:52px;width:100%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;}
@@ -145,7 +150,16 @@ footer{background:#04072c;border-top:2px solid #474a6f;text-align:center;padding
     </div>
     <!-- Tengah: Avatar -->
     <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:1rem;">
-      <div style="width:160px;height:200px;background:#5a5d80;border:4px solid #474a6f;display:flex;align-items:center;justify-content:center;font-size:5rem;">👤</div>
+      <div>
+        <div style="perspective:1000px"class="w-52 h-72 cursor-pointer group">
+          <div class="card-profil w-full h-full
+            transition-transform duration-500 ease-in-out
+            group-hover:[transform:rotateX(40deg)]
+            flex flex-col items-center justify-center">
+          <p class="text-white">Konten</p>
+        </div>
+      </div>
+      </div>
       <div style="background:#04072c;border:2px solid #fde047;color:#fde047;padding:.4rem 1.2rem;font-size:1.1rem;">Alifya Alfatih Pakro</div>
     </div>
     <!-- Kanan: Roles -->
@@ -277,8 +291,8 @@ footer{background:#04072c;border-top:2px solid #474a6f;text-align:center;padding
       <a class="contact-card" href="mailto:alifya@email.com" style="text-decoration:none;color:#fff;">
         <div class="contact-icon">✉️</div>
         <div>
-          <div style="color:#fde047;font-size:1.2rem;">Email</div>
-          <div style="color:#c9d1e0;font-size:.95rem;">alifya@email.com</div>
+          <div style="color:#fde047;font-size:1.2rem;">Email</div>  
+          <div style="color:#c9d1e0;font-size:.95rem;">alif@email.com</div>
         </div>
       </a>
       <a class="contact-card" href="https://github.com/" target="_blank" style="text-decoration:none;color:#fff;">
@@ -286,13 +300,6 @@ footer{background:#04072c;border-top:2px solid #474a6f;text-align:center;padding
         <div>
           <div style="color:#fde047;font-size:1.2rem;">GitHub</div>
           <div style="color:#c9d1e0;font-size:.95rem;">github.com/aliifyaalfatih</div>
-        </div>
-      </a>
-      <a class="contact-card" href="https://linkedin.com/" target="_blank" style="text-decoration:none;color:#fff;">
-        <div class="contact-icon">💼</div>
-        <div>
-          <div style="color:#fde047;font-size:1.2rem;">LinkedIn</div>
-          <div style="color:#c9d1e0;font-size:.95rem;">linkedin.com/in/aliifyaalfatih</div>
         </div>
       </a>
       <a class="contact-card" href="https://wa.me/628xxxxxxxxxx" target="_blank" style="text-decoration:none;color:#fff;">
